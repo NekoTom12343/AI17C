@@ -28,9 +28,6 @@ ggplot(data, aes(x = `VĨ ĐỘ`, y = `KINH ĐỘ`)) +
   theme_minimal()
 ggplot(data, aes(x = `TRẠNG THÁI KIỂM TRA THỰC ĐỊA`)) +
   geom_bar()
-ggplot(data, aes(x = "", fill = `NGUỒN GỐC`)) +
-  geom_bar(width = 1) +
-  coord_polar("y", start = 0)
 
 lam_dong<- data %>%
   filter(TỈNH== "Tỉnh Lâm Đồng")
